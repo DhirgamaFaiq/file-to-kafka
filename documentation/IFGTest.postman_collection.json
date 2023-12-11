@@ -1,0 +1,49 @@
+{
+	"info": {
+		"_postman_id": "a0965172-3a6f-4e9f-b912-22aa64774c7d",
+		"name": "IFGTest",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "13379297"
+	},
+	"item": [
+		{
+			"name": "http://localhost:8080/upload",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "csv_sample",
+							"type": "file",
+							"src": "/C:/Users/dhirg/Downloads/organizations-100.csv"
+						},
+						{
+							"key": "xls_sample",
+							"type": "file",
+							"src": "/C:/Users/dhirg/Downloads/file_example_XLS_50.xls"
+						},
+						{
+							"key": "xlsx_sample",
+							"type": "file",
+							"src": "/C:/Users/dhirg/Downloads/file_example_XLSX_50.xlsx"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:8080/upload",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"upload"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
